@@ -1,0 +1,10 @@
+#header #nav2{
+    position: fixed;
+    background: rgba(34, 60, 100, .7);
+    z-index: 5;
+    top: 0;
+}
+
+.about{
+    margin-top: 12rem;
+}
