@@ -82,6 +82,10 @@ box-icon{
     margin-right: .3rem;
 }
 
+#header #nav1 .left ul{
+    display: flex;
+}
+
 #header #nav1 .left ul li a{
     display: flex;
     align-items: center;
@@ -100,6 +104,7 @@ box-icon{
     color: #fff;
     padding: 0 3rem;
     justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
     width: 100vw;
     /* position: fixed;
@@ -341,7 +346,7 @@ box-icon{
 .contact-box a:hover{
     text-decoration: underline;
     /* text-decoration-color: red; */
-    text-shadow: -3`px -3px #333;
+    text-shadow: -3px -3px #333;
     transition: all .8s;
 }
 
@@ -392,6 +397,9 @@ box-icon{
 }
 
 @media (max-width: 600px){
+    #header #nav1 .left ul{
+        flex-direction: column;
+    }
     .products{
         padding: 1rem;
     }
