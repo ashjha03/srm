@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f3f3f3;
+    font-family: 'Baloo 2', cursive;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.active{
+    text-decoration: underline;
+    font: bolder;
+    font-weight: 800;
+}
+
+.curve{
+    font-family: cursive;
+}
+
+.btn{
+    display: inline-block;
+    background: #223c64;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn:hover{
+    opacity: .93;
+}
+
+/* Header */
+
+#header #nav1{
+    height: 50px;
+    /* background: #761208; */
+    background: #223c64;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+}z
+
+#header #nav1 .left ul, 
+#header #nav1 .right ul{
+    display: flex;
+}
+
+#header #nav1 .left ul li,
+#header #nav2 ul li{
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+box-icon{
+    margin-right: .3rem;
+}
+
+#header #nav1 .left ul li a{
+    display: flex;
+    align-items: center;
+}
+
+#header #nav1 a, 
+#header #nav2 a{
+    color: #fff;
+}
+
+#header #nav2{
+    display: flex;
+    height: 90px;
+    /* background: #de2f1e; */
+    background: rgba(34, 60, 100, .3);
+    color: #fff;
+    padding: 0 3rem;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100vw;
+    /* position: fixed;
+    z-index: 5; */
+}
+
+#header #nav2 .brand{
+    display: flex;
+    align-items: center;
+}
+
+#header #nav2 .brand .brand-logo{
+    height: 60px;
+    padding-right: 1rem;
+}
+
+#header #nav2 .brand .brand-logo img{
+    border-radius: 50%;
+}
+
+#header #nav2 ul{
+    display: flex;
+    align-items: center;
+}
+
+#header #nav2 ul li a:hover{
+    text-decoration: underline;
+    /* text-decoration-color: red; */
+    padding-bottom: .5rem;
+    transition: all .2s;
+}
+
+
+/* SHOWCASE */
+.showcase .showcase-img{
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 80vh;
+}
+
+.showcase .show-content-head{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: flex-end;
+    padding-bottom: 3rem;
+    padding-right: 5rem;
+    justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.showcase .show-content-head h1{
+    text-shadow: 5px 5px 8px #de2f1e;
+}
+
+.showcase .show-content-head p{
+    font-size: 1.6rem;
+}
+
+/* PRODUCTS */
+.products{
+    padding: 3rem;
+    text-align: center;
+}
+
+.products .prod-head{
+    text-align: center;
+    color: #223c64;
+    text-decoration: underline;
+    text-decoration-color: #223c64;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.prod-boxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    padding: 2.5rem 0;
+}
+
+.prod-box{
+    text-align: center;
+    font-family: sans-serif;
+    font-family: 'Baloo 2', cursive;
+}
+
+.prod-box .box-img{
+    /* padding: 1rem 0; */
+    box-shadow: 5px 5px 10px 5px #ddd;
+    height: 32vh;
+}
+
+.prod-box .box-content{
+    padding-top: 1rem;
+}
+
+/* Reviews */
+.review{
+    padding: 3rem;
+    background: url('https://www.nebulasurgical.com/wp-content/uploads/2021/01/Experience.jpg');
+    color: #fff;
+    /* height: 30vh; */
+}
+
+.review .review-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.review .review-content .review-box .box-content h1{
+    font-size: 2.5rem;
+}
+
+.review .review-content .review-box .box-content p{
+    font-size: 1.3rem;
+}
+
+/* Testimonials */
+.testimonials{
+    padding: 3rem;
+    text-align: center;
+    display: none;
+}
+
+.testimonials .test-head{
+    font-size: 1.5rem;
+    color: #223c64;
+    text-decoration: underline;
+}
+
+.testimonials .test-boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 3rem;
+}
+
+.testimonials .test-boxes .test-box{
+    background: white;
+    padding: 2rem;
+    border-radius: 8px; 
+}
+
+.testimonials .test-boxes .test-box .test-box-img{
+    height: 15vh;
+    width: 33%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.testimonials .test-boxes .test-box .test-box-img img{
+    border-radius: 50%;
+}
+
+/* About */
+.about{
+    padding: 3rem;
+    padding-top: 0;
+    background: url('img/SRM_Logo.jpeg') no-repeat center;
+}
+
+.about .about-head{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #223c64;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+}
+
+.about .about-main{
+    background: white;
+    border-radius: 30px;
+    opacity: .9;
+    padding: 3rem;
+}
+
+/* Catalouge */
+.catalouge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.catalouge .catalouge-head{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #223c64;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+}
+
+.catalouge object{
+    height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.catalouge iframe{
+    height: 120vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/* Contact */
+.contact{
+    background: #223c64;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+
+.contact-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-box h3{
+    font-weight: 700;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    padding-bottom: 1rem;
+}
+
+.contact-box a{
+    color: #fff;
+}
+
+.contact-box a:hover{
+    text-decoration: underline;
+    /* text-decoration-color: red; */
+    text-shadow: -3`px -3px #333;
+    transition: all .8s;
+}
+
+.contact-box ul li{
+    padding-bottom: .5rem;
+    font-size: 1.06rem;
+}
+
+.contact .dash-line{
+    height: .4px;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    background-color: #fff;
+}
+
+.contact .end-line{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+}
+
+/* Media Queries */
+@media (max-width: 1000px){
+    #header #nav2{
+        display: none;
+    }
+    #header #nav1{
+        height: 70px;
+    }
+    .showcase .show-content-head{
+        align-items: center;
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+    .products{
+        margin-top: 7rem;
+    }
+    .prod-boxes{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .prod-boxes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .products{
+        padding: 1rem;
+    }
+    .prod-boxes{
+        grid-template-columns: 1fr;
+    }
+    .review{
+        padding: 1rem;
+    }
+    .review .review-content{
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+    .contact-box{
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+    .about{
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+    .about .about-main{
+        padding: 1.5rem;
+    }
+}
