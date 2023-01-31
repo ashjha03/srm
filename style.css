@@ -266,11 +266,20 @@ box-icon{
     border-radius: 50%;
 }
 
+.center{
+    padding-right: 8rem;
+}
+
 /* About */
 .about{
     padding: 3rem;
+    margin-top: 2rem;
     padding-top: 0;
     background: url('img/SRM_Logo.jpeg') no-repeat center;
+}
+
+.about-content{
+    padding: 2rem 4rem;
 }
 
 .about .about-head{
